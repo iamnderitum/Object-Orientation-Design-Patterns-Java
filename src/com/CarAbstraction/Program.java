@@ -4,6 +4,7 @@ public class Program {
 
     public static void main(String[] args){
         Car car = new Car("BMW", 5, 345345) ;
+        car.FillFuel(20);
         car.SwitchOn();
         car.Accelerate();
         System.out.println("First Acceleration: " + car.GetSpeed() + "Remaining fuel: " + car.getFuel()); //2 3.5
