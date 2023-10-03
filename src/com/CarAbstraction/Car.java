@@ -8,23 +8,31 @@ public class Car {
     private int registrationNum;
     private boolean isRunning;
 
-    void SwitchOn(){
-        isRunning = true;
-    }
-
-    void switchOff(){
+    public Car(String manuf, float fuel, int regNum){
+        manufacturer = manuf;
+        this.fuel = fuel;
+        registrationNum = regNum;
+        speed = 0;
         isRunning = false;
     }
 
-    void Accelerate(){
+    public void SwitchOn(){
+        isRunning = true;
+    }
+
+    public void switchOff(){
+        isRunning = false;
+    }
+
+    public void Accelerate(){
         if(!isRunning)
             return ;
 
-        speed++;
+        speed+=2;
         fuel -= 1.5f ;
     }
 
-    void Brake(){
+    public void Brake(){
         speed = 0 ;
     }
 
