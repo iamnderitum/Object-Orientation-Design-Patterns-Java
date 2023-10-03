@@ -36,8 +36,20 @@ public class Car {
         speed = 0 ;
     }
 
-    void Dashboard(){
+    public void Dashboard(){
         System.out.println("speed: " + speed);
         System.out.println("fuel: " + fuel);
+    }
+
+    public void FillFuel(float amount){
+        fuel += amount;
+    }
+
+    public float getFuel(){
+        return fuel;
+    }
+
+    public float GetSpeed(){
+        return speed;
     }
 }
